@@ -80,3 +80,31 @@
 
 </body>
 </html>
+<div class="galeria">
+    <img src="carlota.jpg" alt="Carlota de postre">
+    <img src="cupcake.jpg" alt="Cupcake delicioso">
+    <img src="gourmet.jpg" alt="Postre gourmet">
+</div>
+
+<style>
+    .galeria {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .galeria img {
+        width: 250px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: transform 0.2s ease;
+    }
+
+    .galeria img:hover {
+        transform: scale(1.05);
+    }
+</style>
+
