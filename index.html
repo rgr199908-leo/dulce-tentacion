@@ -55,8 +55,9 @@
   <h2>¿Quiénes somos?</h2>
   <p>Somos una microempresa dedicada a la elaboración de postres artesanales de alta calidad, enfocada en brindar experiencias dulces a nuestros clientes a través de sabores caseros, ingredientes frescos y una atención personalizada.</p>
 </section>
+<!-- Imagen de pasteles con efecto hover -->
 <div class="imagen-pasteles">
-    <img src="pasteles.png" alt="pasteles.png" class="pasteles">
+    <img src="pasteles.jpg" alt="Nuestros pasteles" class="pasteles">
 </div>
 
 <style>
@@ -69,7 +70,12 @@
         width: 80%;          /* se adapta al tamaño de la pantalla */
         max-width: 600px;    /* no crece demasiado en pantallas grandes */
         height: auto;
-        border-radius: 12px; /* opcional, bordes redondeados */
+        border-radius: 12px; /* bordes redondeados */
+        transition: transform 0.3s ease; /* transición suave al hacer hover */
+    }
+
+    .imagen-pasteles .pasteles:hover {
+        transform: scale(1.05); /* se agranda un 5% al pasar el mouse */
     }
 </style>
 
@@ -151,6 +157,7 @@
 
 </body>
 </html>
+
 
 
 
