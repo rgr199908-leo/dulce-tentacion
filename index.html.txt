@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulce Tentación | Repostería Artesanal</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff7f2; color: #333; }
+    header { background: #f59fb3; color: white; text-align: center; padding: 30px 15px; }
+    section { padding: 30px 15px; max-width: 900px; margin: auto; }
+    h2 { color: #d94f70; }
+    .productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .precio { font-weight: bold; color: #d94f70; }
+    footer { background: #f59fb3; color: white; text-align: center; padding: 20px; }
+    .btn { background: #d94f70; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dulce Tentación</h1>
+  <p>Repostería artesanal | Endulzamos tu día con cada bocado</p>
+</header>
+
+<section>
+  <h2>¿Quiénes somos?</h2>
+  <p>Somos una microempresa dedicada a la elaboración de postres artesanales de alta calidad, enfocada en brindar experiencias dulces a nuestros clientes a través de sabores caseros, ingredientes frescos y una atención personalizada.</p>
+</section>
+
+<section>
+  <h2>Misión</h2>
+  <p>Elaborar postres artesanales con altos estándares de calidad, utilizando ingredientes frescos y técnicas caseras, con el objetivo de brindar satisfacción y momentos especiales a nuestros clientes.</p>
+
+  <h2>Visión</h2>
+  <p>Ser una microempresa reconocida a nivel local por la calidad, sabor y presentación de nuestros postres, consolidándonos como una marca de confianza en el sector de la repostería.</p>
+
+  <h2>Valores</h2>
+  <ul>
+    <li>Responsabilidad</li>
+    <li>Honestidad</li>
+    <li>Compromiso</li>
+    <li>Calidad</li>
+    <li>Trabajo en equipo</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Nuestros Productos</h2>
+  <div class="productos">
+    <div class="card">
+      <h3>Carlotas</h3>
+      <p>Sabores: fresa, durazno y limón</p>
+      <p class="precio">Desde $45 MXN</p>
+    </div>
+    <div class="card">
+      <h3>Cupcakes</h3>
+      <p>Personalizados para eventos</p>
+      <p class="precio">Desde $25 MXN</p>
+    </div>
+    <div class="card">
+      <h3>Postres especiales</h3>
+      <p>Gelatinas, pays y galletas</p>
+      <p class="precio">Precios según pedido</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contacto</h2>
+  <p>Haz tu pedido con nosotros:</p>
+  <p>📞 WhatsApp: 233-101-9390</p>
+  <p>📍 Entregas locales</p>
+  <button class="btn">Contáctanos</button>
+</section>
+
+<footer>
+  <p>© 2025 Dulce Tentación - Repostería Artesanal</p>
+</footer>
+
+</body>
+</html>
