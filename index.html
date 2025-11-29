@@ -95,65 +95,14 @@
     <li>Trabajo en equipo</li>
   </ul>
 </section>
-  <!-- Sección Valores con imagen y efecto hover -->
-<section class="valores">
-    <div class="valores-container">
-        <img src="./valores.jpg" alt="Valores de la empresa" class="valores-imagen">
-        <div class="valores-texto">
-            <h2>Valores</h2>
-            <p>En Dulce Tentación, nuestros valores son la base de todo lo que hacemos. Priorizamos la calidad, la honestidad y el respeto, para ofrecer siempre lo mejor a nuestros clientes.</p>
-        </div>
+  <!-- Bloque de Valores con imagen -->
+<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin: 30px 20px;">
+    <img src="valores.jpg" alt="Valores de la empresa" style="width: 250px; max-width: 80%; height: auto; border-radius: 12px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <div>
+        <h2 style="color: #d35400; font-size: 1.8rem; margin-bottom: 10px;">Valores</h2>
+        <p style="font-size: 1rem; color: #333;">En Dulce Tentación, nuestros valores son la base de todo lo que hacemos. Priorizamos la calidad, la honestidad y el respeto, para ofrecer siempre lo mejor a nuestros clientes.</p>
     </div>
-</section>
-
-<style>
-    .valores-container {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        margin: 30px 20px;
-    }
-
-    .valores-imagen {
-        width: 250px;
-        height: auto;
-        border-radius: 12px;
-        transition: transform 0.3s ease;
-    }
-
-    .valores-imagen:hover {
-        transform: scale(1.05);
-    }
-
-    .valores-texto {
-        flex: 1;
-    }
-
-    .valores-texto h2 {
-        color: #d35400;
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-    }
-
-    .valores-texto p {
-        font-size: 1rem;
-        color: #333;
-    }
-
-    @media (max-width: 480px) {
-        .valores-container {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .valores-imagen {
-            width: 80%;
-            max-width: 300px;
-            margin-bottom: 15px;
-        }
-    }
-</style>
+</div>
 
 <section>
   <h2>Nuestros Productos</h2>
@@ -216,6 +165,7 @@
 
 </body>
 </html>
+
 
 
 
