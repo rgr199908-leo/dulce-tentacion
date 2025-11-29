@@ -5,105 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dulce Tentación | Repostería Artesanal</title>
   <style>
+    /* Estilos generales */
     body { font-family: Arial, sans-serif; margin: 0; background: #fff7f2; color: #333; }
     header { background: #f59fb3; color: white; text-align: center; padding: 30px 15px; }
     section { padding: 30px 15px; max-width: 900px; margin: auto; }
-    h2 { color: #d94f70; }
+    h2 { color: #d94f70; margin-top: 0; }
+    ul { padding-left: 20px; }
+    .btn { background: #d94f70; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+
+    /* Logo fijo */
+    .logo-container {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+    }
+    .logo {
+        width: 10vw;
+        max-width: 150px;
+        min-width: 80px;
+        height: auto;
+        border-radius: 8px;
+    }
+    @media (max-width: 480px) {
+        .logo { width: 15vw; max-width: 100px; }
+    }
+
+    /* Imagen Pasteles */
+    .imagen-pasteles { text-align: center; margin: 30px 0; }
+    .imagen-pasteles img {
+        width: 80%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+    .imagen-pasteles img:hover { transform: scale(1.05); }
+
+    /* Bloque Valores */
+    .valores-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 30px 0;
+    }
+    .valores-container img {
+        width: 250px;
+        max-width: 80%;
+        height: auto;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+    .valores-container img:hover { transform: scale(1.05); }
+
+    /* Productos */
     .productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
     .card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
     .precio { font-weight: bold; color: #d94f70; }
+
+    /* Galería de imágenes */
+    .galeria {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .galeria img {
+        width: 250px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: transform 0.2s ease;
+    }
+    .galeria img:hover { transform: scale(1.05); }
+
     footer { background: #f59fb3; color: white; text-align: center; padding: 20px; }
-    .btn { background: #d94f70; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
   </style>
 </head>
 <body>
+
+<!-- Logo fijo -->
 <div class="logo-container">
     <img src="logo.png" alt="Logo del negocio" class="logo">
 </div>
 
-<style>
-    .logo-container {
-        position: fixed;  /* el logo se mantiene visible al hacer scroll */
-        top: 10px;        /* distancia desde la parte superior */
-        left: 10px;       /* distancia desde la izquierda */
-        z-index: 1000;    /* siempre encima de otros elementos */
-    }
-
-    .logo {
-        width: 10vw;      /* ancho relativo al ancho de la ventana */
-        max-width: 150px; /* no crece demasiado en pantallas grandes */
-        min-width: 80px;  /* no se haga muy pequeño en pantallas chicas */
-        height: auto;
-        border-radius: 8px;
-    }
-
-    /* Ajustes para pantallas muy pequeñas */
-    @media (max-width: 480px) {
-        .logo {
-            width: 15vw;
-            max-width: 100px;
-        }
-    }
-</style>
-
+<!-- Header -->
 <header>
   <h1>Dulce Tentación</h1>
   <p>Repostería artesanal | Endulzamos tu día con cada bocado</p>
 </header>
 
+<!-- Sección Quiénes somos -->
 <section>
   <h2>¿Quiénes somos?</h2>
   <p>Somos una microempresa dedicada a la elaboración de postres artesanales de alta calidad, enfocada en brindar experiencias dulces a nuestros clientes a través de sabores caseros, ingredientes frescos y una atención personalizada.</p>
 </section>
-<!-- Imagen de pasteles con efecto hover -->
+
+<!-- Imagen Pasteles -->
 <div class="imagen-pasteles">
-    <img src="pasteles.jpg" alt="Nuestros pasteles" class="pasteles">
+    <img src="pasteles.jpg" alt="Nuestros pasteles">
 </div>
 
-<style>
-    .imagen-pasteles {
-        text-align: center;  /* centra la imagen */
-        margin: 30px 0;      /* espacio arriba y abajo */
-    }
-
-    .imagen-pasteles .pasteles {
-        width: 80%;          /* se adapta al tamaño de la pantalla */
-        max-width: 600px;    /* no crece demasiado en pantallas grandes */
-        height: auto;
-        border-radius: 12px; /* bordes redondeados */
-        transition: transform 0.3s ease; /* transición suave al hacer hover */
-    }
-
-    .imagen-pasteles .pasteles:hover {
-        transform: scale(1.05); /* se agranda un 5% al pasar el mouse */
-    }
-</style>
-
+<!-- Sección Misión y Visión -->
 <section>
   <h2>Misión</h2>
   <p>Elaborar postres artesanales con altos estándares de calidad, utilizando ingredientes frescos y técnicas caseras, con el objetivo de brindar satisfacción y momentos especiales a nuestros clientes.</p>
 
   <h2>Visión</h2>
   <p>Ser una microempresa reconocida a nivel local por la calidad, sabor y presentación de nuestros postres, consolidándonos como una marca de confianza en el sector de la repostería.</p>
-
-  <h2>Valores</h2>
-  <ul>
-    <li>Responsabilidad</li>
-    <li>Honestidad</li>
-    <li>Compromiso</li>
-    <li>Calidad</li>
-    <li>Trabajo en equipo</li>
-  </ul>
 </section>
-  <!-- Bloque de Valores con imagen -->
-<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin: 30px 20px;">
-    <img src="valores.jpg" alt="Valores de la empresa" style="width: 250px; max-width: 80%; height: auto; border-radius: 12px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-    <div>
-        <h2 style="color: #d35400; font-size: 1.8rem; margin-bottom: 10px;">Valores</h2>
-        <p style="font-size: 1rem; color: #333;">En Dulce Tentación, nuestros valores son la base de todo lo que hacemos. Priorizamos la calidad, la honestidad y el respeto, para ofrecer siempre lo mejor a nuestros clientes.</p>
-    </div>
-</div>
 
+<!-- Bloque Valores con imagen -->
+<section>
+  <div class="valores-container">
+    <img src="valores.jpg" alt="Valores de la empresa">
+    <div>
+      <h2>Valores</h2>
+      <ul>
+        <li>Responsabilidad</li>
+        <li>Honestidad</li>
+        <li>Compromiso</li>
+        <li>Calidad</li>
+        <li>Trabajo en equipo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Productos -->
 <section>
   <h2>Nuestros Productos</h2>
   <div class="productos">
@@ -124,33 +155,15 @@
     </div>
   </div>
 </section>
+
+<!-- Galería de productos -->
 <div class="galeria">
     <img src="carlota.jpg" alt="Carlota de postre">
     <img src="cupcake.jpg" alt="Cupcake delicioso">
     <img src="gourmet.jpg" alt="Postre gourmet">
 </div>
 
-<style>
-    .galeria {
-        display: flex;
-        gap: 15px;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
-
-    .galeria img {
-        width: 250px;
-        height: auto;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        transition: transform 0.2s ease;
-    }
-
-    .galeria img:hover {
-        transform: scale(1.05);
-    }
-</style>
+<!-- Sección Contacto -->
 <section>
   <h2>Contacto</h2>
   <p>Haz tu pedido con nosotros:</p>
@@ -159,19 +172,10 @@
   <button class="btn">Contáctanos</button>
 </section>
 
+<!-- Footer -->
 <footer>
   <p>© 2025 Dulce Tentación - Repostería Artesanal</p>
 </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
