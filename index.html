@@ -95,10 +95,10 @@
     <li>Trabajo en equipo</li>
   </ul>
 </section>
-<!-- Sección Valores con imagen y efecto hover -->
+  <!-- Sección Valores con imagen y efecto hover -->
 <section class="valores">
     <div class="valores-container">
-        <img src="valores.jpg" alt="Valores de la empresa" class="valores-imagen">
+        <img src="./valores.jpg" alt="Valores de la empresa" class="valores-imagen">
         <div class="valores-texto">
             <h2>Valores</h2>
             <p>En Dulce Tentación, nuestros valores son la base de todo lo que hacemos. Priorizamos la calidad, la honestidad y el respeto, para ofrecer siempre lo mejor a nuestros clientes.</p>
@@ -110,24 +110,24 @@
     .valores-container {
         display: flex;
         align-items: center;
-        gap: 20px; /* espacio entre imagen y texto */
-        flex-wrap: wrap; /* se ajusta en pantallas pequeñas */
+        gap: 20px;
+        flex-wrap: wrap;
         margin: 30px 20px;
     }
 
     .valores-imagen {
-        width: 250px;   /* tamaño de la imagen */
+        width: 250px;
         height: auto;
         border-radius: 12px;
-        transition: transform 0.3s ease; /* efecto hover */
+        transition: transform 0.3s ease;
     }
 
     .valores-imagen:hover {
-        transform: scale(1.05); /* se agranda al pasar el mouse */
+        transform: scale(1.05);
     }
 
     .valores-texto {
-        flex: 1; /* ocupa el resto del espacio disponible */
+        flex: 1;
     }
 
     .valores-texto h2 {
@@ -141,7 +141,6 @@
         color: #333;
     }
 
-    /* Responsive: en móviles la imagen va arriba del texto */
     @media (max-width: 480px) {
         .valores-container {
             flex-direction: column;
@@ -217,6 +216,7 @@
 
 </body>
 </html>
+
 
 
 
