@@ -17,6 +17,34 @@
   </style>
 </head>
 <body>
+<div class="logo-container">
+    <img src="logo.png" alt="Logo del negocio" class="logo">
+</div>
+
+<style>
+    .logo-container {
+        position: fixed;  /* el logo se mantiene visible al hacer scroll */
+        top: 10px;        /* distancia desde la parte superior */
+        left: 10px;       /* distancia desde la izquierda */
+        z-index: 1000;    /* siempre encima de otros elementos */
+    }
+
+    .logo {
+        width: 10vw;      /* ancho relativo al ancho de la ventana */
+        max-width: 150px; /* no crece demasiado en pantallas grandes */
+        min-width: 80px;  /* no se haga muy pequeño en pantallas chicas */
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Ajustes para pantallas muy pequeñas */
+    @media (max-width: 480px) {
+        .logo {
+            width: 15vw;
+            max-width: 100px;
+        }
+    }
+</style>
 
 <header>
   <h1>Dulce Tentación</h1>
@@ -106,6 +134,7 @@
 
 </body>
 </html>
+
 
 
 
